@@ -5,72 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu com Bordas Arredondadas</title>
     <style>
-        * {
-            box-sizing: border-box;
-        }
-
         body, html {
             margin: 0;
             padding: 0;
             height: 100%;
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
+            overflow: hidden;
         }
 
         .background {
-            width: 90vw;
-            height: 90vh;
-            margin: 5vh auto;
-            background-image: url('tab.png');
+            width: 100vw;
+            height: 100vh;
+            background-image: url('https://raw.githubusercontent.com/teu-usuario/teu-repositorio/main/tab.png');
             background-size: cover;
             background-position: center;
             border-radius: 30px;
             overflow: hidden;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.3);
-            position: relative;
-        }
-
-        .search {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            width: 200px;
-            display: flex;
-            background-color: rgba(255, 255, 255, 0.8);
-            border-radius: 25px;
-            overflow: hidden;
-            box-shadow: 0 2px 8px rgba(0,0,0,0.2);
-        }
-
-        .search input {
-            flex: 1;
-            border: none;
-            padding: 10px 15px;
-            outline: none;
-            background: transparent;
-            font-size: 16px;
-        }
-
-        .search button {
-            background-color: #0078ff;
-            border: none;
-            color: white;
-            padding: 10px 15px;
-            cursor: pointer;
-            transition: 0.3s;
-        }
-
-        .search button:hover {
-            background-color: #005ecc;
         }
     </style>
 </head>
 <body>
-    <div class="background">
-        <div class="search">
-            <input type="text" placeholder="Pesquisar...">
-            <button>🔍</button>
-        </div>
-    </div>
+    <div class="search"></div>
 </body>
 </html>
